@@ -5,7 +5,7 @@ export default {
   name: "Home",
   created() {
     this.getGoogle();
-    this.Twitter();
+    this.getTwitter();
   },
   computed: {
     ...mapState(["google"]),
@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     ...mapActions(["getGoogle"]),
-    ...mapActions(["Twitter"])
+    ...mapActions(["getTwitter"])
   }
 };
 </script>

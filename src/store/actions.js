@@ -17,13 +17,13 @@ export default {
         });
     },
 
-    Twitter({ state, commit }) {
-        commit('setYoutube', { isLoading: true, data: state.twitter.data });
+    getTwitter({ state, commit }) {
+        commit('setTwitter', { isLoading: true, data: state.twitter.data });
         return http.get('index.php?src=twitter').then((res) => {
-            commit('setYoutube', { isLoading: false, data: res.data });
+            commit('setTwitter', { isLoading: false, data: res.data });
             return res.data;
         }).catch(() => {
-            commit('setYoutube', { isLoading: false, data: state.twitter.data });
+            commit('setTwitter', { isLoading: false, data: state.twitter.data });
         });
     }
 

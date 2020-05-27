@@ -3,7 +3,7 @@ export default{
         state.google = googleData;
         console.log(googleData);
       },
-      setYoutube(state, youtubeData) {
+      setTwitter(state, youtubeData) {
         state.twitter = youtubeData;
         console.log(youtubeData);
       },
